@@ -2,7 +2,7 @@ import { BellIcon, ChevronLeftIcon } from '../foundations/icons'
 
 export default function TopBar({ title = 'Meli Play', onBack, showBell = true }) {
   return (
-    <div className="flex items-center justify-between bg-surface-elevated px-4 py-[10px]">
+    <div className="flex items-center justify-between bg-surface-elevated px-4 pt-7 pb-[10px]">
       <div className="flex items-center gap-2">
         {onBack && (
           <button

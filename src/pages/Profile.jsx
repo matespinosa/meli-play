@@ -1,4 +1,3 @@
-import StatusBar from '../components/feature/StatusBar'
 import TopBar from '../components/feature/TopBar'
 import { user } from '../data/mock'
 
@@ -20,7 +19,6 @@ const MENU = [
 export default function Profile() {
   return (
     <div className="flex min-h-full flex-col bg-surface-elevated">
-      <StatusBar />
       <TopBar title="Perfil" />
 
       <main className="flex flex-col gap-8 p-4 pb-[100px]">

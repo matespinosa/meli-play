@@ -87,6 +87,20 @@ export function ShareIcon({ className = 'w-5 h-5', stroke = 'currentColor' }) {
   )
 }
 
+export function CloseIcon({ className = 'w-5 h-5', stroke = 'currentColor' }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18 6 6 18M6 6l12 12"
+        stroke={stroke}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 export function CheckIcon({ className = 'w-4 h-4', stroke = 'currentColor' }) {
   return (
     <svg className={className} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,6 +220,27 @@ export function Spinner({ className = 'w-5 h-5' }) {
         d="M21 12a9 9 0 0 0-9-9"
         stroke="currentColor"
         strokeWidth="2.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+export function SparkleIcon({ className = 'w-5 h-5', stroke = 'currentColor' }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 3l1.66 5.34L19 10l-5.34 1.66L12 17l-1.66-5.34L5 10l5.34-1.66L12 3Z"
+        stroke={stroke}
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+      <path
+        d="M18.5 15.5l.7 2.3 2.3.7-2.3.7-.7 2.3-.7-2.3-2.3-.7 2.3-.7.7-2.3Z"
+        stroke={stroke}
+        strokeWidth="1.5"
+        strokeLinejoin="round"
         strokeLinecap="round"
       />
     </svg>

@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import StatusBar from '../components/feature/StatusBar'
 import TopBar from '../components/feature/TopBar'
 import StoryRow from '../components/feature/StoryRow'
 import CircleFeedCard from '../components/feature/CircleFeedCard'
@@ -20,7 +19,6 @@ export default function MyCircle({ onBack, onOpenMovie }) {
 
   return (
     <div className="flex min-h-full flex-col bg-surface-elevated">
-      <StatusBar />
       <TopBar title="Mi círculo" onBack={onBack} />
 
       <main className="flex flex-col gap-8 p-4 pb-[100px]">

@@ -23,6 +23,7 @@ export default {
           500: '#00A650',
           200: 'rgba(0, 166, 80, 0.2)',
         },
+        ai: '#7957F6',
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],
@@ -47,6 +48,16 @@ export default {
       height: {
         // Desktop-only "phone" height — used above the lg breakpoint (1000px).
         phone: '850px',
+      },
+      keyframes: {
+        // Waveform pulse — used by the AI search button while loading.
+        wave: {
+          '0%, 100%': { transform: 'scaleY(0.4)' },
+          '50%': { transform: 'scaleY(1)' },
+        },
+      },
+      animation: {
+        wave: 'wave 0.9s ease-in-out infinite',
       },
     },
     screens: {
