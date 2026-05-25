@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    /* Reserve space for the vertical scrollbar at all times so the frame
+       width stays consistent across routes (some tabs scroll, others don't). */
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    line-height: 1.3;
+    /* Prevent any accidental horizontal scroll from inner content. */
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbar on horizontal chip/movie carousels */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
